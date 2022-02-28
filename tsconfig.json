@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+	  "module": "esnext",
+    "strict": true,
+    "types": ["svelte"],
+    "sourceMap": true
+  },
+  "extends": "@tsconfig/svelte/tsconfig.json",
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+}
