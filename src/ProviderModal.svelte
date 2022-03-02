@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { loadSigner } from "./ethers";
+  import { defaultEvmStores } from "svelte-web3";
+  let title: string | undefined = "Connect to Ethereum";
 </script>
 
-<h2>Connect to ethereum</h2>
-<button on:click={loadSigner}>Metamask</button>
+<h2>{title}</h2>
+<button on:click={() => defaultEvmStores.setProvider()}>Connect</button>
 
 <style>
   h2 {
